@@ -1,0 +1,291 @@
+/*
+geral
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+corpo
+*/
+body {
+  font-family: "Open sans", sans-serif;
+}
+
+/*
+Blocos
+*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(175, 175, 175);
+}
+.content {
+  border-radius: 15px;
+  background-color: #fff;
+  width: 960px;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  background-color: #58a79b;
+  width: 40%;
+  height: 100%;
+  border-radius: 15px 0 0 15px;
+}
+
+/*
+titulo e descrição
+*/
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.titlePrimary {
+  color: #fff;
+}
+
+.titleSecond {
+  color: #58a79b;
+}
+
+.description {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.descriptionPrimary {
+  color: #fff;
+}
+
+.descriptionSecond {
+  color: #7f8c8d;
+}
+
+/*
+botão
+*/
+.btn {
+  border-radius: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 10px;
+  padding: 10px 50px;
+  cursor: pointer;
+  width: 150px;
+  align-self: center;
+  outline: none;
+  margin-top: 1rem 0;
+}
+
+.btnPrimary {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.btnPrimary:hover {
+  background-color: #fff;
+  color: #58a79b;
+  font-weight: bold;
+  transition: all 0.9s;
+}
+
+.btnSecond {
+  background-color: #58a79b;
+  border: 1px solid #58a79b;
+}
+
+.btnSecond:hover {
+  background-color: transparent;
+  border: 1px solid #58a79b;
+  color: #58a79b;
+  transition: all 900ms;
+}
+
+/*
+bloco1
+*/
+.first-content {
+  display: flex;
+}
+
+.first-content .second-column {
+  z-index: 12;
+}
+
+/*
+colunas
+*/
+.first-column {
+  text-align: center;
+  width: 40%;
+  z-index: 10;
+}
+
+.second-column {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*
+Lista
+*/
+.socialMedia {
+  margin: 1rem 0;
+}
+
+.listSocialMedia {
+  display: flex;
+  list-style: none;
+}
+
+.itemSocialMedia i {
+  color: #95a5a6;
+  border: 1px solid #bdc3c7;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.itemSocialMedia i:hover {
+  background-color: #58a79b;
+  color: #ffffff;
+  transition: all 500ms;
+  border: 1px solid #58a79b;
+}
+
+.itemSocialMedia:not(:first-child) {
+  margin-left: 10px;
+}
+
+/*
+Formulário
+*/
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+}
+
+.form input {
+  height: 45px;
+  width: 100%;
+  border: none;
+  background-color: #ecf0f1;
+  outline: none;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: #000 !important;
+}
+
+.labelInput {
+  display: flex;
+  align-items: center;
+  background-color: #ecf0f1;
+  margin: 4px;
+}
+
+.iconModify {
+  color: #7f8c8d;
+  padding: 0 5px;
+}
+
+/*
+bloco2
+*/
+.second-content {
+  position: absolute;
+  display: flex;
+}
+
+.second-content .first-column {
+  order: 2;
+  z-index: -1;
+}
+
+.second-content .second-column {
+  order: 1;
+  z-index: -1;
+}
+
+.password {
+  color: #34495e;
+  font-size: 14px;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.password::first-letter {
+  text-transform: capitalize;
+}
+
+/*
+JavaScript
+*/
+.singInJs .first-content .first-column,
+.singInJs .first-content .second-column {
+  z-index: -1;
+}
+
+.singInJs .second-content .first-column {
+  z-index: 13;
+}
+
+.singInJs .second-content .second-column {
+  z-index: 11;
+}
+
+.singInJs .content::before {
+  left: 60%;
+  border-radius: 0 15px 15px 0;
+  z-index: 12;
+  border: 1px solid #58a79b;
+}
+
+.singUpJs .content::before {
+  z-index: 12;
+}
+
+.singUpJs .second-content .first-column,
+.singUpJs .second-content .second-column {
+  z-index: -1;
+}
+
+.singUpJs .first-content .first-column {
+  z-index: 13;
+}
+
+.singUpJs .first-content .second-column {
+  z-index: 11;
+}
+
+.singInJs .first-content .second-column {
+  z-index: -1;
+  position: relative;
+}
+
+.singUpJs .second-content .second-column {
+  z-index: -1;
+  position: relative;
+}

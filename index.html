@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content first-content">
+        <div class="first-column">
+          <h2 class="title titlePrimary">Welcome Back</h2>
+          <p class="description descriptionPrimary">To keep connected with</p>
+          <p class="description descriptionPrimary">
+            please login with your personal info
+          </p>
+          <button class="btn btnPrimary" id="singIn">Sing in</button>
+        </div>
+        <div class="second-column">
+          <h2 class="title titleSecond">Create Account</h2>
+          <div class="socialMedia">
+            <ul class="listSocialMedia">
+              <li class="itemSocialMedia">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li class="itemSocialMedia">
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+              </li>
+              <li class="itemSocialMedia">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+            </ul>
+          </div>
+          <p class="description descriptionSecond">
+            Or use your email for registration:
+          </p>
+          <form class="form" action="/" method="GET">
+            <label class="labelInput">
+              <i class="far fa-user iconModify"></i>
+              <input type="text" placeholder="Nome" />
+            </label>
+
+            <label class="labelInput">
+              <i class="far fa-envelope iconModify"></i>
+              <input type="email" placeholder="Email" />
+            </label>
+
+            <label class="labelInput">
+              <i class="fas fa-lock iconModify"></i>
+              <input type="password" placeholder="Password" />
+            </label>
+
+            <button class="btn btnSecond" id="create">Create</button>
+          </form>
+        </div>
+      </div>
+      <div class="content second-content">
+        <div class="first-column">
+          <h2 class="title titlePrimary">Hello, Friend</h2>
+          <p class="description descriptionPrimary">
+            Enter your personal datails
+          </p>
+          <p class="description descriptionPrimary">and start jouney with us</p>
+          <button class="btn btnPrimary" id="singUp">Sing up</button>
+        </div>
+        <div class="second-column">
+          <h2 class="title titleSecond">Sing In To Developer</h2>
+          <div class="socialMedia">
+            <ul class="listSocialMedia">
+              <li class="itemSocialMedia">
+                <i class="fab fa-facebook-f"></i>
+              </li>
+              <li class="itemSocialMedia">
+                <i class="fab fa-google-plus-g"></i>
+              </li>
+              <li class="itemSocialMedia">
+                <i class="fab fa-linkedin-in"></i>
+              </li>
+            </ul>
+          </div>
+          <p class="description descriptionSecond">
+            Or use your email account:
+          </p>
+          <form class="form">
+            <label class="labelInput">
+              <i class="far fa-envelope iconModify"></i>
+              <input type="email" name="email" placeholder="Email" />
+            </label>
+
+            <label class="labelInput">
+              <i class="fas fa-lock iconModify"></i>
+              <input type="password" name="password" placeholder="Password" />
+            </label>
+
+            <a href="#" class="password">Forgot your password?</a>
+            <button class="btn btnSecond">
+              Sing in
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
